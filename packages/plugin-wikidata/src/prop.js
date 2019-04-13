@@ -237,7 +237,7 @@ export function parseType (type) {
  * @return {String} label
  */
 export function getLabel (entity, langs) {
-  if (!entity) {
+  if (!entity  || !entity.labels) {
     return undefined
   }
 
